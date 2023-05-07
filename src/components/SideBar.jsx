@@ -5,23 +5,25 @@ function SideBar() {
     <div className="sidebar">
       <div className="container">
         <div className="logo">
-          <h3>Movies.net</h3>
+          <h2>BlackBox Movies</h2>
         </div>
-        <div className="catgories">
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
-          <h1>Sidebar</h1>
+        <div className="categories-con">
+          <div className="menu">
+            <p className="title">Menu</p>
+            <p>Home</p>
+            <p>Coming Soon</p>
+            <p>Top Rated</p>
+          </div>
+          <div className="categories">
+            <p className="title">Categories</p>
+            <p>Drama</p>
+            <p>Action</p>
+            <p>Comedy</p>
+            <p>Adult</p>
+            <p>Animation</p>
+            <p>Kids</p>
+            <p>Documentaries</p>
+          </div>
         </div>
       </div>
     </div>

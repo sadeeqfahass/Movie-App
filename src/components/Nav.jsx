@@ -3,7 +3,10 @@ import React from 'react'
 function Nav() {
   return (
     <div className='nav'>
-      <h1>Nav</h1>
+      <div className="search">
+        <input type="text" placeholder='Search...'/>
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
     </div>
   )
 }

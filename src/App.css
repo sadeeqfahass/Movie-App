@@ -1,50 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
+  font-family: "Montserrat", sans-serif;
 }
 
 .main {
-    display: flex;
-    gap: 1rem;
-    /* height: 100vh; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100vh;
 }
 
 .sidebar {
-    /* background: darkcyan; */
-    width: 15%;
-    flex: 1;
-    border-right: .5px solid #aeaeae;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* background: darkcyan; */
+  border-right: 0.5px solid #aeaeae;
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sidebar .container {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 0;
-
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  margin-top: 2rem;
 }
 
+.sidebar .container .logo h2 {
+    font-size: 1rem;
+    color: #F45050;
+}
+
+.sidebar .container .categories-con {
+    margin-top: 2rem;
+}
+
+.sidebar .container .categories-con .menu {
+    margin-bottom: 2rem;
+}
+
+.sidebar .container .categories-con .menu .title,
+.sidebar .container .categories-con .categories .title {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: #777;
+}
+
+.sidebar .container .categories-con .menu p, 
+.sidebar .container .categories-con .categories p {
+    margin-bottom: 0.2rem;
+} 
+
+.nav {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: end;
+    padding: 0 1rem;
+}
+
+.nav .search {
+    background: #F45050;
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav .search input {
+    border: none;
+    height: 2rem;
+    width: 100%;
+    padding: .5rem;
+    color: #777;
+    background: transparent;
+}
+
+.nav .search input:focus {
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+
+.nav .search button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    all: unset;
+    height: 2rem;
+    width: 1.5rem;
+    color: #777;
+    /* background: #777; */
+}
+
+
 .content {
-    background: orange;
-    width: 85%;
+  /* background: orange; */
+  grid-column: 3/-1;
+  padding: 0.5rem;
 }
 
 .content .content-container {
-    /* display: flex; */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
 .content .card {
-    background: darkgreen;
-    width: 200px;
-    padding: 1rem;
+  background: #777;
+  width: 200px;
+  height: 300px;
+  padding: 1rem;
 }
