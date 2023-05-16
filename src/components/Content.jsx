@@ -10,9 +10,9 @@ function Content() {
         <div className="card">
           <img src="https://picsum.photos/id/237/200/300" alt="" />
           <div className="text">
-            <p>title</p>
-            <p>description</p>
-            <p>rating</p>
+            <p className="movie-name">Spider Man</p>
+            <p className="movie-desc">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <p className="movie-rating">7.2 / 10</p>
           </div>
         </div>
         <div className="card">
