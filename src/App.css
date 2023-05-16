@@ -74,9 +74,10 @@ body {
 }
 
 .nav .search {
+    width: 15rem;
     background: #F45050;
-    border-radius: .6rem;
-    padding: .5rem 1.5rem;
+    border-radius: .3rem;
+    padding: .3rem;
     display: flex;
     align-items: center;
 }
@@ -103,7 +104,6 @@ body {
     height: 2rem;
     width: 1.5rem;
     color: #777;
-    /* background: #777; */
 }
 
 
