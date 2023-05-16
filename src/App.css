@@ -113,6 +113,10 @@ body {
   padding: 0.5rem;
 }
 
+.content .content-title {
+    margin-bottom: .5rem;
+}
+
 .content .content-container {
   display: flex;
   gap: 10px;

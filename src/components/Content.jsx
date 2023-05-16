@@ -5,7 +5,7 @@ function Content() {
   return (
     <div className="content">
       <Nav />
-      <h1>All Movies</h1>
+      <h1 className="content-title">All Movies</h1>
       <div className="content-container">
         <div className="card">
           <h2>Image</h2>
