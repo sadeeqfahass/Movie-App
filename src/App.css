@@ -17,12 +17,13 @@ body {
 }
 
 .sidebar {
-  /* background: darkcyan; */
+  background: darkcyan;
   border-right: 0.5px solid #aeaeae;
   grid-column: 1/3;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .sidebar .container {
