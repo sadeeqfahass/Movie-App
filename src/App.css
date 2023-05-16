@@ -108,7 +108,6 @@ body {
 
 
 .content {
-  /* background: orange; */
   grid-column: 3/-1;
   padding: 0.5rem;
 }
