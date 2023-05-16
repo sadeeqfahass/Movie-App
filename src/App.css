@@ -75,7 +75,9 @@ body {
 
 .nav .search {
   width: 15rem;
-  background: #f45050;
+  /* background: #f45050; */
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.1),
+  -3px -2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 0.3rem;
   padding: 0.3rem;
   display: flex;
@@ -93,7 +95,7 @@ body {
 
 .nav .search input:focus {
   outline: none;
-  border-bottom: 1px solid #777;
+  /* border-bottom: 1px solid #777; */
 }
 
 .nav .search button {
@@ -117,16 +119,18 @@ body {
 
 .content .content-container {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 10px;
   flex-wrap: wrap;
   height: 100%;
 }
 
 .content .content-container .card {
-  background: #777;
+  /* background: #d3d3d3; */
   width: 220px;
   height: 400px;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.1),
+            -2px -1.5px 3px rgba(0, 0, 0, 0.1);
 }
 
 .content .content-container .card img {
@@ -147,4 +151,5 @@ body {
 .content .content-container .card .text .movie-desc {
     font-size: .85rem;
     margin: .5rem 0;
+    color: #777;
 }

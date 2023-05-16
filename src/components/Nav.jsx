@@ -5,7 +5,7 @@ function Nav() {
     <div className='nav'>
       <div className="search">
         <input type="text" placeholder='Search...'/>
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button><i className="fa-solid fa-magnifying-glass"></i></button>
       </div>
     </div>
   )
