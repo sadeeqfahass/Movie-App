@@ -9,13 +9,13 @@ function SideBar() {
         </div>
         <div className="categories-con">
           <div className="menu">
-            <p className="title">Menu</p>
+            <h3 className="title">Menu</h3>
             <p>Home</p>
             <p>Coming Soon</p>
             <p>Top Rated</p>
           </div>
           <div className="categories">
-            <p className="title">Categories</p>
+            <h3 className="title">Categories</h3>
             <p>Drama</p>
             <p>Action</p>
             <p>Comedy</p>

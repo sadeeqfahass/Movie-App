@@ -50,14 +50,21 @@ body {
 .sidebar .container .categories-con .menu .title,
 .sidebar .container .categories-con .categories .title {
     font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: .5rem;
     color: #777;
 }
 
 .sidebar .container .categories-con .menu p, 
 .sidebar .container .categories-con .categories p {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
 } 
+
+.sidebar .container .categories-con .menu p:hover, 
+.sidebar .container .categories-con .categories p:hover {
+    color: #F45050;
+}
 
 .nav {
     margin-top: 1.5rem;
