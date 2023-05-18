@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
 
 function Content() {
+
+  const [movieData, setMovieData] = useState([])
+  const apiKey = "6f77cbfe9edaa7a0cb4bbf0345b3394c"
+
+  useEffect(() => {
+    async function getMovies() {
+      const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`;
+
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        setMovieData(data.results);
+        console.log(movieData)
+        console.log(data.results)
+      } catch (error) {
+        console.error(error);
+      }
+    } 
+
+    getMovies();
+  }, [])
+
   return (
     <div className="content">
       <Nav />
