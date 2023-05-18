@@ -12,10 +12,10 @@ function Content() {
       try {
         const response = await fetch(url);
         const data = await response.json();
-        setMovieData(data.results);
+        setMovieData(data)
 
-        console.log(data.results); // Logging the data to verify the result
-        console.log(movieData); // Logging the data to verify the result
+        console.log(data.results);
+        console.log(movies);
       } catch (error) {
         console.error(error);
       }
@@ -30,7 +30,7 @@ function Content() {
       <h1 className="content-title">All Movies</h1>
       <div className="content-container">
         <div className="card">
-          <img src="lorem" alt="" />
+          <img src="https://picsum.photos/200/300" alt="" />
           <div className="text">
             <p className="movie-name">Spider Man</p>
             <p className="movie-desc">
