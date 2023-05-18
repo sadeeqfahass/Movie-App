@@ -10,7 +10,7 @@ function SideBar() {
         <div className="categories-con">
           <div className="menu">
             <h3 className="title">Menu</h3>
-            <p>Home</p>
+            <p>Popular</p>
             <p>Coming Soon</p>
             <p>Top Rated</p>
           </div>
