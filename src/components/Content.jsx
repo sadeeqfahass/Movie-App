@@ -12,10 +12,9 @@ function Content() {
       try {
         const response = await fetch(url);
         const data = await response.json();
-        setMovieData(data)
+        setMovieData(data.results)
 
         console.log(data.results);
-        console.log(movies);
       } catch (error) {
         console.error(error);
       }
