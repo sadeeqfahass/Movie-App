@@ -13,7 +13,7 @@ function Content() {
         const response = await fetch(url);
         const data = await response.json();
         setMovieData(data.results)
-
+        
         console.log(data.results);
       } catch (error) {
         console.error(error);
