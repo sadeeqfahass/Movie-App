@@ -2,7 +2,7 @@ import React from "react";
 
 function SideBar() {
   function handleClick(e) {
-    console.log(e.target)
+    console.log(e.target.innerText)
   }
   return (
     <div className="sidebar">
