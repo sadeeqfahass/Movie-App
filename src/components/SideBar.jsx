@@ -1,6 +1,9 @@
 import React from "react";
 
 function SideBar() {
+  function handleClick(e) {
+    console.log(e.target)
+  }
   return (
     <div className="sidebar">
       <div className="container">
@@ -10,7 +13,7 @@ function SideBar() {
         <div className="categories-con">
           <div className="menu">
             <h3 className="title">Menu</h3>
-            <p>Popular</p>
+            <p onClick={handleClick}>Popular</p>
             <p>Coming Soon</p>
             <p>Top Rated</p>
           </div>
